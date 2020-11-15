@@ -176,8 +176,7 @@ function tick(data) {
 if (typeof process === 'undefined') {
   // Get starting data from the window object
   // (This comes from data.js)
-
-  window.localStorage.clear();
+  
   if (window.localStorage.getItem('data')) {
     window.data = JSON.parse( window.localStorage.getItem('data') );
   }
